@@ -1,0 +1,99 @@
+
+
+body {
+    font-family: 'Poppins', "sans-serif";
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+    
+}
+
+@keyframes imagefade {
+    from { opacity: 1; }
+    to { opacity: 0; }
+    }
+    
+#logo {
+    animation-name: imagefade;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    }
+    
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* cards and images should be full width and stacked */
+
+.card{
+    width: 100%;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+      animation: none;
+    }
+}
+
+@media all and (min-width: 700px){
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo{
+        width: 400px;
+        height: auto;
+    }
+
+    .nav_links{
+        flex-direction: row;
+    }
+    
+    .pricing{
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    .card{
+        width: 300px;
+    }
+
+    .gallery img{
+        width: 300px;
+    }
+}
